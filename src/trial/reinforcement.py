@@ -7,7 +7,6 @@ gym.logger.set_level(40) # suppress warnings (please remove if gives error)
 import numpy as np
 from collections import deque
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 import torch
 torch.manual_seed(0) # set random seed
