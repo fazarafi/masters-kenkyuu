@@ -5,6 +5,8 @@ from ft_encoder import MultiHeadedAttention, PositionalEncoding, PositionwiseFee
 # Abstractive Summarization with Attention Mechanism
 print("DUMMY")
 
+print("DUM2")
+
 N=6
 d_model=512
 d_ff=2048
