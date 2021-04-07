@@ -4,6 +4,7 @@ from ft_encoder import MultiHeadedAttention, PositionalEncoding, PositionwiseFee
 
 # Abstractive Summarization with Attention Mechanism
 print("CONTOH")
+print("DUM")
 
 N=6
 d_model=512
