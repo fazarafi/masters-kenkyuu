@@ -3,8 +3,7 @@ import copy
 from ft_encoder import MultiHeadedAttention, PositionalEncoding, PositionwiseFeedForward, EncoderBlock, Encoderi
 
 # Abstractive Summarization with Attention Mechanism
-print("CONTOH")
-print("DUM")
+print("DUMMY")
 
 N=6
 d_model=512
