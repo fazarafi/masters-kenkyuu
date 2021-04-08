@@ -7,6 +7,8 @@ print("DUMMY")
 
 print("DUM2")
 
+print("DUM2")
+
 N=6
 d_model=512
 d_ff=2048
