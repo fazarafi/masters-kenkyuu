@@ -6,7 +6,6 @@ import torch
 class SummModel(object):
   """Class of Summarization model. Supports all baseline models"""
   factcc_rewards = []
-  
   ac_theta = []
 
   def calculate_reward(self, reference, summary, measurement):
@@ -35,6 +34,8 @@ class SummModel(object):
     else:
       return 0
 
+  def max_likelihood():
+    # Critic I
 
   def decode_model(self, src):
     return ""
