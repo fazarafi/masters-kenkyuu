@@ -1,7 +1,9 @@
 import pandas
 import numpy as np
 import torch
+import train_abstractive from ../PreSumm
 
+import Decoder from 
 
 class SummModel(object):
   """Class of Summarization model. Supports all baseline models"""
@@ -14,7 +16,7 @@ class SummModel(object):
       return self.factcc_cls(reference, summary)
     if 'feqa' in measurement:
       return self.feqa_cls(reference, summary)
-    else:
+    else: 
       return "No evaluation defined"
 
   def factcc_cls(self, ref, summary):
@@ -36,9 +38,6 @@ class SummModel(object):
 
   def max_likelihood():
     # Critic I
-
-  def decode_model(self, src):
-    return ""
 
   def loss_function(params):
     return 0
