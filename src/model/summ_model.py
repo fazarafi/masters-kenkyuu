@@ -7,8 +7,10 @@ import Decoder from
 
 class SummModel(object):
   """Class of Summarization model. Supports all baseline models"""
-  factcc_rewards = []
-  ac_theta = []
+  def __init__(self):
+        super(SummModel, self).__init__()
+        self.factcc_rewards = []
+        self.theta_param = []
 
   def calculate_reward(self, reference, summary, measurement):
     # Calculate reward as for 

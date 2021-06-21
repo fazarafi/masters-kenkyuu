@@ -4,18 +4,6 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
 
-class ACNetwork:
-    optimizer = optim.Adam(model.parameters(), lr=3e-2)
-    import Policy    
-    def finish_episode():
-        return 0
-
-    def backprop(self):
-        return 0
-
-    def forward():
-        return 0
-
 class Policy(nn.Module):
     """
     implements both actor and critic in one model
@@ -39,10 +27,11 @@ class Policy(nn.Module):
         forward of both actor and critic
         """
         x = F.relu(self.affine1(x))
-
+        
         # actor: choses action to take from state s_t 
         # by returning probability of each action
         action_prob = F.softmax(self.action_head(x), dim=-1)
+        # [FAZA] Decode Summary through the model
 
         # critic: evaluates being in the state s_t
         state_values = self.value_head(x)
@@ -51,4 +40,18 @@ class Policy(nn.Module):
         # 1. a list with the probability of each action over the action space
         # 2. the value from state s_t 
         return action_prob, state_values
+
+class ACNetwork:
+    optimizer = optim.Adam(model.parameters(), lr=3e-2) 
+    a = Policy()
+    def finish_episode():
+        return 0
+
+    def backprop(self):
+        
+        return 0
+
+    def forward():
+        return 0
+
 
